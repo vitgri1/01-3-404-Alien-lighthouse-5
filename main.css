@@ -1,0 +1,23 @@
+body{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block
+}
+header{
+    background-color: #313A43;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+main{
+    background-image:url(./bg.jpg);
+    float: left;
+    width: 100%;
+}
+h3{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    font-weight: 100;
+}
