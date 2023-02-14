@@ -1,38 +1,119 @@
+body,
+body * {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 body{
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
-    margin: 0;
 }
-header{
+.container{
+    width: 800px;
+    display: inline-block;
+}
+.container.header{
     background-color: #313A43;
     float: left;
-    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav{
-    float: right;
-    margin-right: 5%;
-    margin-top: 10px;
+.logo-link{
+    margin-left: 20px;
+    width: 200px;
+}
+.logo-link > img{
+    float: left;
+    width: 54%;
+    user-select: none;
+}
+.logo-link > p{
+    float: left;
+    width: 44%;
+    line-height: 1em;
+    color: #fff;
+    font-family: cursive;
+    font-style: italic;
+    border-left: 3px dotted red;
+}
+.logo-link:hover > p{
+    color: #385068;
+    border-color: yellow;
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
     width: 500px;
     text-align: right;
     font-size: 14px;
-    }
+}
+.menu-item:hover{
+    color: #385068;
+}
+.nav-btn{
+    background-color: #37ACC0;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
 a{
     text-decoration: none;
     color: #fff;
-    border-color: #fff;
 }
 main{
-    background-image:url(./bg.jpg);
-    float: left;
-    width: 100%;
-    background-size: 100%;
+    background: center url(./bg.jpg) no-repeat;
+    background-size: cover;
+    height: 475px; /* size */
 }
-h3{
+.col{
+    display:inline-block;
+    width:45%;
+    margin-left: 6%;
+    margin-top: 20px;
+}
+.main-img{
     display: inline-block;
     width: 100%;
-    margin: 0;
+    user-select: none;
+}
+.heading{
+    display: inline-block;
+    width: 100%;
     font-weight: 100;
+    font-size: 20px;
+}
+.heading-para{
+    display: inline-block;
+    width: 90%;
+    font-size: 14px;
+}
+.btn-box{
+    display: flex;
+    gap: 0.7%;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 12px;
+    margin-bottom: 100px;
+}
+.btn-box > .btn{
+    width: 30%;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    padding: 5px 3px;
+    background-color: #385068;
+    display: flex;
+    align-items: center;
+}
+.btn > img{
+    width: 2em;
+    user-select: none;
+}
+.btn > .btn-txt{
+    width: 70%;
 }
