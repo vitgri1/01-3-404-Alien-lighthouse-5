@@ -61,6 +61,7 @@ body{
     background-color: #37ACC0;
     padding: 5px 15px;
     border-radius: 20px;
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -109,10 +110,11 @@ main{
     background-color: #385068;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 .btn > img{
     width: 2em;
-    user-select: none;
+
 }
 .btn > .btn-txt{
     width: 70%;
